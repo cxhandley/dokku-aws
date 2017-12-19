@@ -192,6 +192,7 @@ ec2_instance = template.add_resource(ec2.Instance(
     UserData=Base64(Join('', [
         '#!/bin/bash\n',
         'sudo apt-get update\n',
+        'sudo apt-get install -y build-essential\n,
         'wget https://raw.githubusercontent.com/dokku/dokku/', Ref(dokku_version), '/bootstrap.sh\n',
         'sudo',
         ' DOKKU_TAG=', Ref(dokku_version),
