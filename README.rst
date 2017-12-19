@@ -21,8 +21,8 @@ to allow deploys via the ``dokku`` user).
 |dokku-stack|_
 
 .. |dokku-stack| image:: https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png
-.. _dokku-stack: https://console.aws.amazon.com/cloudformation/home?#/stacks/new?stackName=my-dokku-stack&templateURL=https://s3.amazonaws.com/dokku-aws/dokku_stack.json
-.. _underlying template: https://s3.amazonaws.com/dokku-aws/dokku_stack.json
+.. _dokku-stack: https://console.aws.amazon.com/cloudformation/home?#/stacks/new?stackName=my-dokku-stack&templateURL=https://s3-ap-southeast-2.amazonaws.com/cx-cf-stacks/dokku-simple.json
+.. _underlying template: https://s3-ap-southeast-2.amazonaws.com/cx-cf-stacks/dokku-simple.json
 
 Using the default values in this template (a ``t2.micro`` instance and 30 GB of disk space), your new
 Dokku instance should fit within the `free tier <https://aws.amazon.com/free/>`_ on AWS.
